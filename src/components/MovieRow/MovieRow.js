@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import './MovieRow.css';
+import seta_esquerda from '../../images/seta_esquerda.png'
+import seta_direita from '../../images/seta_direita.png'
 
 
 export default ({title, items}) => {
@@ -23,11 +25,11 @@ export default ({title, items}) => {
         <div className="movieRow">
             <h2>{title}</h2>
             <div className="movieRow--left" onClick={handleLeftArrow}>
-            <img src="http://www.clipartbest.com/cliparts/RiA/Rx5/RiARx5n6T.png" alt="" />
+            <img src={seta_esquerda} alt="" />
 
             </div>
             <div className="movieRow--right" onClick={handleRightArrow}>
-            <img src="http://www.clipartbest.com/cliparts/RiA/Rx5/RiARx5n6T.png" alt="" />
+            <img src={seta_direita} alt="" />
 
             </div>
             <div className="movieRow--listarea">
